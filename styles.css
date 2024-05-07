@@ -7,6 +7,9 @@ html, body {
     color: azure;
     font-size: 18px;
     box-sizing: border-box;
+    background-image: url(/Resources/Images/background.jpg);
+    background-position: center;
+    background-size: auto;
 }
 .clearfix::after {
     content: " ";
@@ -19,7 +22,7 @@ h3 {
 }
 
 p {
-    margin: 2%;
+    margin: 5%;
     list-style: georgian;
     line-height: 1.2rem;
     word-spacing: 1.2%;
@@ -32,7 +35,7 @@ nav {
    top: 0px;
    justify-content: space-evenly;
    background-color: black;
-   height: 10%;
+   height: 15%;
    align-items: center;
 }  
 
@@ -42,28 +45,41 @@ nav a {
     color: orangered;
 }
 
+/* Nav bar to fit mobile*/
+
 @media only screen and (min-width: 375px) and (max-width: 667px), (orientation: portrait) {
-    .nav a {
-       font-size: smaller;
-    }
-    .heading{
+    .navigation {
+        margin:0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }      
+    nav a {
+       font-size: 80%;
+       margin-right: auto;
+    }   
+
+    .heading {
        font-size: 60%;
     }
+
     header {
         max-height: 600px;
     }
-    #origins h2, #gallery h2, #video h2, #visit h2 {
-        font-size: 0.6rem;
-    }
 }    
+/*===============================*/
 
 .heading {
     text-align: center;
     padding-top: 220px;
 }
+.heading h2 {
+    color: azure;
+}
 
 header {
-    background-image: url(/Nestinarstvo/Resources/Images/banner.jpg);
+    background-image: url(/Resources/Images/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +110,7 @@ h1 {
   text-align: center;
 }
 .second {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 60px;
     width: 275px;
     float: left;
@@ -106,10 +122,10 @@ h1 {
     text-align: center;
 }
 
-#origins h2 {
-    margin-top: 60px;
+h2 {
+    margin-top: 50px;
     text-align: center;
-    font-size: 2.5em ;
+    font-size: 2.5em;
     color: orangered;
 }
 #gallery {
@@ -133,8 +149,18 @@ h1 {
     clear: both;
 }
 
+/* How to fix the images so that they fit?
+==========================================*/
+@media screen and (min-width: 375px) and (max-width: 667px), (orientation: portrait) {
+    
+    
+    
+}
+/*====================================*/
+
+
 .image-box {
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 400px;
     margin: 20px;
     max-height: 650px;
@@ -144,6 +170,9 @@ h1 {
 .image-box img {
     width: 100%;
     height: auto;
+}
+.image-box p {
+    text-align: center;
 }
 
 #video {
@@ -193,17 +222,11 @@ video {
    color:azure;
    font-size: 1.5rem;
    letter-spacing: 0.5rem;
-   text-align: left;
 }
 
-.copy {
-    
-    text-align:end;
-    
-}
 footer {
-    margin: 60px 10px 20px;
+    margin: 60px 30px 30px 30px;
     max-width: 1280px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
