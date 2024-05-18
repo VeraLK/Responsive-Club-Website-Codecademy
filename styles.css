@@ -149,8 +149,6 @@ h2 {
     clear: both;
 }
 
-/* How to fix the images so that they fit?
-==========================================*/
 @media screen and (min-width: 375px) and (max-width: 667px), (orientation: portrait) {
 
 }
@@ -159,12 +157,11 @@ h2 {
        height: auto;
     } 
 }
-/*====================================*/
-
 
 .image-box {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 400px;
+    margin-top:20px;	
     margin: 20px;
     max-height: 650px;
     display: inline-block;
