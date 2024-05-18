@@ -195,6 +195,7 @@ h2 {
 }
 
 video {
+    margin-top: 40px;
     border: 2px solid orangered;
     width: 80%;
     height: auto;
